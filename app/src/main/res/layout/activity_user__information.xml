@@ -14,7 +14,7 @@
         android:inputType="textPersonName"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintVertical_bias="0.1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
 
@@ -40,15 +40,82 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="50dp"
         />
+
     <EditText
         android:id="@+id/user_day"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
+        android:layout_marginTop="52dp"
         android:hint="일"
         android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@id/user_name"
+        android:textSize="20dp"
         app:layout_constraintLeft_toRightOf="@id/user_month"
+        app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+    <EditText
+    android:id="@+id/user_disease"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/user_day"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginTop="50dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:hint="의학적 질환을 입력해주세요"
+    />
+    <EditText
+        android:id="@+id/user_record"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/user_disease"
+        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="의료 기록을 입력해주세요"
         />
+    <EditText
+        android:id="@+id/user_allergy"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/user_record"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:textSize="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="알레르기 및 약물 부작용을 입력해주세요"
+        />
+
+    <EditText
+        android:id="@+id/user_blood"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/user_allergy"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:textSize="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="혈액형을 입력해주세요"
+        />
+    <EditText
+        android:id="@+id/user_height"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/user_blood"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:textSize="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="키를 입력해주세요"
+        />
+    <EditText
+        android:id="@+id/user_weight"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/user_height"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:textSize="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="몸무게를 입력해주세요"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
