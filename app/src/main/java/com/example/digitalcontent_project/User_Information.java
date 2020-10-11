@@ -9,7 +9,7 @@ import android.widget.Spinner;
 
 public class User_Information extends AppCompatActivity {
 
-
+//추가
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
